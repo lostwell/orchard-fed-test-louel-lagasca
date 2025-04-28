@@ -1,11 +1,21 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../assets/fonts/OpenSans.ttf') format('truetype');
+  font-weight: 100 900; // Variable font weight range (for variable fonts)
+  font-stretch: 50% 200%; // Optional: Stretch range for width
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: OpenSans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0e1414;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,12 +38,65 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
   background-color: #0e1414;
+
+  font-stretch: normal;
+  font-style: normal;
+  text-align: left;
+  color: #fff;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: normal;
+  opacity: 0.8;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 30px;
+  font-weight: 300;
   line-height: 1.1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin: 0;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #cf1430;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+}
+
+mark {
+  background-color: transparent;
+  color:#fff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  opacity: 0.9;
 }
 
 button {
@@ -66,4 +129,40 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.horizontal-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }

@@ -6,10 +6,36 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  padding: 0 2rem;
   background-color: #0e1414;
 }
 
-.content-section {
-  padding: 0 2rem;
+.section {
+  padding: 7.5rem 9.2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-container {
+  max-width: fit-content;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.8);
+  padding-bottom: 30px;
+}
+
+.vertical-content {
+  max-width: 362px;
+}
+
+.gallery {
+  width: fit-content;
+  height: auto;
+}
+
+.description {
+  width: 315px;
 }
