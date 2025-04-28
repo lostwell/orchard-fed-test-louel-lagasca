@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './styles/index.scss'
+
 import App from './components/App.jsx'
+import Content from './assets/data/data.json'
+
+import './styles/index.scss'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <App contentData={Content.data}/>
   </StrictMode>,
 )

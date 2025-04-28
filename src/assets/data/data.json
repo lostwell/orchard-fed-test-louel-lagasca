@@ -1,0 +1,85 @@
+{
+  "data": [
+    {
+      "type": "featuredcontent",
+      "text": {
+        "header": "What does cooking mean?",
+        "content": "Is it simply applying heat to a food product? A way of making certain food safe to eat? Or a way to create flavour and make food more appealing? This is just part of what Hervé This, the father of molecular gastronomy, has dedicated his life to finding out. We spoke to him to find out what his experiments have told him. And in the process even discovered the secret to cooking the perfect egg...",
+        "highlightHeader": "The Perfect Egg",
+        "highlight": "Keep water between 67 and 68°C for a flavourful, tender yolk"
+      },
+      "images": {
+        "img1": {
+          "src": "/images/section1-img1.PNG",
+          "alt": "Food wrapped in banana leaves while boiled in water",
+          "style": {
+            "width": "372px",
+            "height": "600px"
+          }
+        },
+        "img2": {
+          "src": "/images/section1-img2.PNG",
+          "alt": "Ingredients being organized on a counter top",
+          "style": {
+            "width": "372px",
+            "height": "295px"
+          }
+        },
+        "img3": {
+          "src": "/images/section1-img3.PNG",
+          "alt": "Types of boiled eggs cracked open in a carton",
+          "style": {
+            "width": "372px",
+            "height": "295px"
+          }
+        }
+      }
+    },
+    {
+      "type": "figurecontent",
+      "text": {
+        "header": "Taste the Colours",
+        "cards": [
+          {
+            "header": "RED",
+            "content": "Red foods remind us of berries and soft fruits, so we anticipate a sweet taste."
+          },
+          {
+            "header": "Green",
+            "content": "Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours"
+          },
+          {
+            "header": "White",
+            "content": "White foods evoke memories of salt and salty flavours, driving the expectation of a savoury treat."
+          }
+        ]
+      },
+      "images": {
+        "img1": {
+          "src": "/images/section2-img1.PNG",
+          "alt": "Red jelly on spoon",
+          "style": {
+            "width": "375px",
+            "height": "300px"
+          }
+        },
+        "img2": {
+          "src": "/images/section2-img2.PNG",
+          "alt": "Green jelly on spoon",
+          "style": {
+            "width": "375px",
+            "height": "300px"
+          }
+        },
+        "img3": {
+          "src": "/images/section2-img3.PNG",
+          "alt": "White jelly on spoon",
+          "style": {
+            "width": "375px",
+            "height": "300px"
+          }
+        }
+      }
+    }
+  ]
+}
