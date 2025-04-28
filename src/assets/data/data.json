@@ -57,7 +57,7 @@
       "images": {
         "img1": {
           "src": "/images/section2-img1.PNG",
-          "alt": "Red jelly on spoon",
+          "alt": "Red jelly on a spoon",
           "style": {
             "width": "375px",
             "height": "300px"
@@ -65,7 +65,7 @@
         },
         "img2": {
           "src": "/images/section2-img2.PNG",
-          "alt": "Green jelly on spoon",
+          "alt": "Green jelly on a spoon",
           "style": {
             "width": "375px",
             "height": "300px"
@@ -73,7 +73,7 @@
         },
         "img3": {
           "src": "/images/section2-img3.PNG",
-          "alt": "White jelly on spoon",
+          "alt": "White jelly on a spoon",
           "style": {
             "width": "375px",
             "height": "300px"
