@@ -10,17 +10,17 @@
       },
       "images": {
         "img1": {
-          "src": "/images/section1-img1.PNG",
+          "src": "./images/section1-img1.PNG",
           "alt": "Food wrapped in banana leaves while boiled in water",
           "className": "gallery-image-large"
         },
         "img2": {
-          "src": "/images/section1-img2.PNG",
+          "src": "./images/section1-img2.PNG",
           "alt": "Ingredients being organized on a counter top",
           "className": "gallery-image-medium"
         },
         "img3": {
-          "src": "/images/section1-img3.PNG",
+          "src": "./images/section1-img3.PNG",
           "alt": "Types of boiled eggs cracked open in a carton",
           "className": "gallery-image-medium"
         }
@@ -47,17 +47,17 @@
       },
       "images": {
         "img1": {
-          "src": "/images/section2-img1.PNG",
+          "src": "./images/section2-img1.PNG",
           "alt": "Red jelly on a spoon",
           "className": "card-image"
         },
         "img2": {
-          "src": "/images/section2-img2.PNG",
+          "src": "./images/section2-img2.PNG",
           "alt": "Green jelly on a spoon",
           "className": "card-image"
         },
         "img3": {
-          "src": "/images/section2-img3.PNG",
+          "src": "./images/section2-img3.PNG",
           "alt": "White jelly on a spoon",
           "className": "card-image"
         }
