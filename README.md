@@ -1,12 +1,7 @@
-# React + Vite
+# orchard-fed-test-louel-lagasca
+This is a Vite + React project for Filta's test purposes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Used the following tools for development:
+- Vite & React: Used for the build tool and front-end framework. Good for single page web applications, which is the scope of this test.
+- Sass: Used as the CSS-preprocessor. I prefer traditional CSS and Sass has that with more advanced features. Also prefer the approach of writing styling in an external file, makes it easier to maintain.
+- Motion/Framer Motion: A good animation library for modern web development. Easy to read, maintain, and implement.
