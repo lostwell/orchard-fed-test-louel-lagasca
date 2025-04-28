@@ -18,9 +18,13 @@ function Modal({ isOpen, onClose, children }) {
             className="modal"
             onClick={onClose} // prevent closing when clicking inside
             initial={{ top: '80%', scale: 0, rotate: 180 }}
-            animate={{ top: '0%', scale: 1.25, rotate: 0 }}
+            animate={{ top: '0%', scale: 1, rotate: 0 }}
             exit={{ top: '-80%', scale: 0, rotate: -180}}
             transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.15, }}
+            whileTap={{
+              scale: 0.5,
+            }}
           >
             {children}
           </motion.div>

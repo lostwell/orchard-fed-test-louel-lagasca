@@ -1,6 +1,18 @@
 import { useMemo } from 'react';
+import { motion } from 'motion/react';
 import PropTypes from 'prop-types'
 import FigureCard from './FigureCard'
+
+const parentVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1, y: 0,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.2,
+    },
+  },
+};
 
 function FigureContent({images, text}) {
 
@@ -9,7 +21,13 @@ function FigureContent({images, text}) {
   })), [images, text])
 
   return (
-    <section className='section vertical-flex gap-30'>
+    <motion.section 
+      className='section vertical-flex gap-30'
+      initial="hidden"
+      whileInView="show"
+      variants={parentVariants}
+      viewport={{ amount: 0.3 }}
+    >
       <div className='header-container center'>
         <h1>{text.header}</h1>
       </div>
@@ -20,7 +38,7 @@ function FigureContent({images, text}) {
           ))
         }
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -52,35 +52,47 @@ body {
 }
 
 p {
-  font-size: 21px;
+  font-size: 1.313em;
   font-weight: 300;
   line-height: 1.43;
   letter-spacing: normal;
   opacity: 0.8;
   margin: 0;
+
+  @media (max-width: 400px) {
+    font-size: 1em;
+  }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   opacity: 0.8;
   margin: 0;
+
+  @media (max-width: 400px) {
+    font-size: 1.5em;
+  }
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 1.313em;
   font-weight: bold;
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
   margin: 0;
+
+  @media (max-width: 400px) {
+    font-size: 1.2em;
+  }
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: bold;
   line-height: 1.4;
   letter-spacing: normal;
@@ -88,6 +100,10 @@ h3 {
   text-transform: uppercase;
   margin: 0 0 10px 0;
   opacity: 0.9;
+
+  @media (max-width: 400px) {
+    font-size: 0.85em;
+  }
 }
 
 img {
@@ -138,11 +154,26 @@ button:focus-visible {
 .horizontal-flex {
   display: flex;
   flex-direction: row;
+  
+  &:not(.gallery) {
+    @media (max-width: 1170px) {
+      flex-direction: column;
+      margin: auto;
+  
+      &.gap-10 {
+        gap: 60px;
+      }
+    }
+  }
 }
 
 .vertical-flex {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1170px) {
+    margin: auto;
+  }
 }
 
 .gap-10 {

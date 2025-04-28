@@ -13,6 +13,22 @@
   padding: 7.5rem 9.2rem;
   justify-content: center;
   width: 100%;
+
+  &:last-child {
+    padding-bottom: 15rem;
+  }
+
+  @media (max-width: 1350px) {
+    padding: 5rem 1rem;
+  }
+
+  @media (max-width: 1170px) {
+    padding: 4rem 1rem;
+  }
+
+  @media (max-width: 400px) {
+    padding: 3rem 1rem;
+  }
 }
 
 .header-container {
@@ -34,10 +50,19 @@
 .gallery {
   width: fit-content;
   height: auto;
+
+  @media (max-width: 1170px) {
+    margin: auto;
+    flex-direction: row;
+  }
 }
 
 .description {
   width: 315px;
+
+  @media (max-width: 350px) {
+    width: 250px;
+  }
 }
 
 .backdrop {
@@ -60,16 +85,115 @@
 }
 
 .photo {
-  background: white;
+  background: #ddd;
   padding: 5px;
   max-width: fit-content;
   max-height: fit-content;
 }
 
 .photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   p {
     font-size: 16px;
     text-align: center;
     margin-top: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.photo-description {
+  @media (max-width: 1350px) {
+    width: 150px;
+  }
+}
+
+.card-image {
+  width: 375px;
+  height: 300px;
+
+  @media (max-width: 1350px) {
+    width: 325px;
+    height: 250px;
+  }
+  
+  @media (max-width: 400px) {
+    width: 320px;
+    height: 245px;
+  }
+
+  @media (max-width: 370px) {
+    width: 320px;
+    height: 245px;
+  }
+
+  @media (max-width: 350px) {
+    width: 310px;
+    height: 235px;
+  }
+
+  @media (max-width: 320px) {
+    width: 290px;
+    height: 215px;
+  }
+}
+
+.gallery-image-medium {
+  width: 372px;
+  height: 295px;
+
+  @media (max-width: 1350px) {
+    width: 300px;
+    height: 223px;
+  }
+
+  @media (max-width: 1170px) {
+    width: 220px;
+    height: 143px;
+  }
+
+  @media (max-width: 400px) {
+    width: 210px;
+    height: 133px;
+  }
+
+  @media (max-width: 370px) {
+    width: 190px;
+    height: 113px;
+  }
+}
+
+.gallery-image-large {
+  width: 372px;
+  height: 600px;
+
+  @media (max-width: 1350px) {
+    width: 235px;
+    height: 463px;
+  }
+
+  @media (max-width: 1170px) {
+    width: 135px;
+    height: 303px;
+  }
+
+  @media (max-width: 400px) {
+    width: 120px;
+    height: 278px;
+  }
+
+  @media (max-width: 370px) {
+    width: 90px;
+    height: 238px;
   }
 }

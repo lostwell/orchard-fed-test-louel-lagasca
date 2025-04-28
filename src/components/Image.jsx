@@ -1,8 +1,9 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types'
 import Modal from './Modal'
+import { motion } from 'motion/react';
 
-function Image({src, alt, style}) {
+function Image({src, alt, className}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return <>
@@ -10,21 +11,30 @@ function Image({src, alt, style}) {
       console.log(e.target);
       e.stopPropagation();
     }}>
-      <img 
+      <motion.img 
         src={src} 
         alt={alt} 
-        style={style} 
+        className={className} 
         onClick={(e) => {
           setIsOpen(true);
         }}
+        
+        whileHover={{ border: '10px solid #ddd' }}
+        
+        whileTap={{
+          scale: 0.8,
+          rotate: Math.random() > 0.5 ? 15 : -15,
+        }}
+
+        transition={{ duration: 0.3 }}
       />
     </a>
     <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
       <div className='photo-container'>
         <div className='photo'>
-          <img src={src} alt={alt} style={style} />
+          <img src={src} alt={alt} className={className}  />
         </div>
-        <p>{alt}</p>
+        <motion.p className='photo-description'>{alt}</motion.p>
       </div>
     </Modal>
   </>
@@ -33,10 +43,7 @@ function Image({src, alt, style}) {
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
-  style: PropTypes.shape({
-    width: PropTypes.string,
-    height: PropTypes.string,
-  }),
+  style: PropTypes.string,
 }
 
 export default Image
