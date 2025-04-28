@@ -3,5 +3,5 @@ This is a Vite + React project for Filta's test purposes.
 
 Used the following tools for development:
 - Vite & React: Used for the build tool and front-end framework. Good for single page web applications, which is the scope of this test.
-- Sass: Used as the CSS-preprocessor. I prefer traditional CSS and Sass has that with more advanced features. Also prefer the approach of writing styling in an external file, makes it easier to maintain.
+- Sass: Used as the CSS-preprocessor. I prefer traditional CSS and Sass has that with more advanced features. Also prefer the approach of writing styling in an external file, makes it easier to maintain. Lastly, using scss allows me to take advantage of the styling provided by Zeplin.
 - Motion/Framer Motion: A good animation library for modern web development. Easy to read, maintain, and implement.
